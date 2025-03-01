@@ -1,0 +1,25 @@
+name: hoom_sound
+description: "Projet Flutter intégrant l’API Mistral AI et l’API Spotify avec authentification via Supabase."
+publish_to: "none" # Ce projet n'est pas destiné à être publié sur pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  supabase_flutter: ^1.0.0      # Pour l'authentification et la gestion des données via Supabase
+  http: ^0.13.4                # Pour réaliser des appels HTTP (Mistral AI, Spotify, etc.)
+  flutter_web_auth: ^0.4.0      # Pour gérer l'authentification OAuth (Spotify)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
